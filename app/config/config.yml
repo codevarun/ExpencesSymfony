@@ -61,10 +61,11 @@ jms_security_extra:
 doctrine_mongodb:
     connections:
         default:
-            server: mongodb://localhost:27017
+            #server: mongodb://localhost:27017
+            server: "mongodb://exp:asdf@flame.mongohq.com:27088/expences"
             options:
                 connect: true
-    default_database: expences_test
+    default_database: expences
     document_managers:
         default:
             auto_mapping: true
